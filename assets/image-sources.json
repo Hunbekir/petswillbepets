@@ -1,0 +1,15 @@
+{
+  "$comment": "Source registry for approved photography. Originals in assets/originals are never modified. `trimWhiteBorder` removes only pure-white (#FFFFFF) letterbox/padding rows and columns that surround the photograph; it never crops into image content.",
+  "outputDir": "public/images",
+  "widths": [480, 800, 1200, 1728],
+  "assets": [
+    { "id": "wb-package-studio", "source": "assets/originals/waste-bags/1.png", "trimWhiteBorder": false },
+    { "id": "wb-honeycomb-macro", "source": "assets/originals/waste-bags/3.png", "trimWhiteBorder": false },
+    { "id": "wb-walk-handsfree", "source": "assets/originals/waste-bags/4.png", "trimWhiteBorder": true },
+    { "id": "wb-carry-slit-macro", "source": "assets/originals/waste-bags/5.png", "trimWhiteBorder": false },
+    { "id": "wb-dispenser-studio", "source": "assets/originals/waste-bags/6.png", "trimWhiteBorder": true },
+    { "id": "wb-attachment-sequence", "source": "assets/originals/waste-bags/7.png", "trimWhiteBorder": true },
+    { "id": "wb-pickup-lawn", "source": "assets/originals/waste-bags/8.png", "trimWhiteBorder": true },
+    { "id": "wb-construction-flatlay", "source": "assets/originals/waste-bags/Item 1_ Waste Bags.png", "trimWhiteBorder": true }
+  ]
+}

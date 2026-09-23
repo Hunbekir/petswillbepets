@@ -1,0 +1,28 @@
+{
+  "name": "petswillbepets",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "images": "node scripts/optimize-images.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build:client": "vite build",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist-server",
+    "build": "npm run typecheck && npm run build:client && npm run build:server && node scripts/prerender.mjs",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "sharp": "^0.35.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}
