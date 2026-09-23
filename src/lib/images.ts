@@ -1,6 +1,6 @@
 import { imageAssets, type ImageAssetId } from '../generated/imageAssets';
 
-const BASE = '/images';
+const BASE = `${import.meta.env.BASE_URL}images`;
 export const FORMATS = ['avif', 'webp'] as const;
 
 export function assetInfo(id: ImageAssetId) {
